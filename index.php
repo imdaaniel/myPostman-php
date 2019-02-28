@@ -1,7 +1,6 @@
 <?php
 if (!empty($_GET['btn_call']) && !empty($_GET['url'])) {
     $url = "http://" . str_replace("http://", "", $_GET['url']);
-    //www.backsite.com.br/dispositivo/service/backsite/apponepage/select.geral.bandeiras.php
     $json = json_decode(file_get_contents($url));
 }
 ?>
